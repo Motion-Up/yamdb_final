@@ -7,8 +7,9 @@ services:
       - /var/lib/postgresql/data/
     env_file: 
       - ./.env
-  web: 
-    image: 83607rhfd/api_yamdb:v1.05.2022
+  web:
+    container_name: web
+    image: ignatdan/api_yamdb:latest
     restart: always
     volumes: 
       - static_value:/app/static/
