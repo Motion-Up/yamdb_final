@@ -27,7 +27,7 @@ jobs:
         python -m flake8 
 
 
-name: Django-app workflow
+name: Django-app workflows
 
 on: [push]
 
