@@ -15,7 +15,7 @@ services:
 
   web:
     container_name: web
-    image: maxzak/api_yamdb:latest
+    image: ignatdan/api_yamdb:latest
     restart: always
     volumes:
       - static_value:/app/static/
