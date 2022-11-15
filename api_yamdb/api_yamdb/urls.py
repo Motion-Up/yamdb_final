@@ -14,7 +14,7 @@ schema_view = get_schema_view(
         # terms_of_service="URL страницы с пользовательским соглашением",
         contact=openapi.Contact(email="admin@kittygram.ru"),
         license=openapi.License(name="BSD License"),
-   ),
+    ),
     public=True,
     permission_classes=(permissions.AllowAny,),
 )
@@ -26,6 +26,8 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    url(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), 
-    name='schema-redoc'),
+    url(
+        r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0),
+        name='schema-redoc'
+    ),
 ]
