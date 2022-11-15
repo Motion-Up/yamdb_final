@@ -1,13 +1,12 @@
 import csv
+import datetime
 import pathlib
 from pathlib import Path
-import datetime
 
 import peewee
 from django.core.management.base import BaseCommand
 
 from api_yamdb.settings import DATABASE_NAME
-
 
 dir_path = pathlib.Path.cwd()
 path_db = Path(dir_path, DATABASE_NAME)
